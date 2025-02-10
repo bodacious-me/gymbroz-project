@@ -21,7 +21,7 @@ class SignUpPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocConsumer<AuthBloc, AuthState>(builder: (context, state) {
-      print('state of the app: ${state.toString()}');
+      print('state of the application: ${state.toString()}');
       if (state is AuthLoadingState) {
         return const Scaffold(
             backgroundColor: backGroundColor,
